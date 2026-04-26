@@ -1,0 +1,29 @@
+{
+  "name": "blockchain-tender-system",
+  "version": "1.0.0",
+  "description": "Blockchain-Based Tender and Contract Management System",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "npx hardhat test",
+    "node": "npx hardhat node",
+    "deploy": "npx hardhat run scripts/deploy.js --network localhost",
+    "deploy:local": "npx hardhat run scripts/deploy.js --network localhost",
+    "start": "npm run node",
+    "full-start": "concurrently \"npm run node\" \"sleep 3 && npm run deploy\" \"sleep 6 && cd frontend && npm start\""
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "concurrently": "^8.2.2",
+    "hardhat": "^2.19.0",
+    "solc": "^0.8.19"
+  },
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "tender",
+    "contract",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT"
+}
